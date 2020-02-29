@@ -12,7 +12,15 @@ There are several tutorials giving useful information about making Ubuntu instal
 ## Objectives
 
  - Make a dual boot installation with Windows and Ubuntu 19.04
- - 200MB disk space should be left allocated to Windows, and 800MB to Ubuntu (main working environment)
+ - Total disk space ~1TB: 250GB disk space should be left allocated to Windows, and rest for Ubuntu (main working environment)
 
 ## Steps
 
+- Update Windows
+   - First step when you get your new laptop is to install the necessary Windows and Dell updates. You can do this by going to Settings > Updates & Security > Check For Updates. 
+   
+- Make partition for Linux
+   - Type “Create and Format Hard Disk Partitions” in the Windows Search Bar.
+   - Right click on the largest partition and click “Shrink Volume”.
+   - Choose the desired size for Ubuntu  (750 GB with 1TB disk size).
+   - Now yous should have the newly created “Unallocated space” visible in the partition diagram.
