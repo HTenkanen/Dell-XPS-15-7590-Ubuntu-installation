@@ -43,3 +43,4 @@ There are several tutorials giving useful information about making Ubuntu instal
 - Download [Ubuntu 19.10](https://ubuntu.com/download/desktop/thank-you/?version=19.10&architecture=amd64).
 - Download [Rufus](https://rufus.ie/) for making the bootable memory stick.
 - Buy/get a memory stick that can be used to create the Ubuntu boot (requires ~3GB)
+- Create bootable Ubuntu USB stick following [**this tutorial**](https://ubuntu.com/tutorials/tutorial-create-a-usb-stick-on-windows)
