@@ -44,3 +44,4 @@ There are several tutorials giving useful information about making Ubuntu instal
 - Download [Rufus](https://rufus.ie/) for making the bootable memory stick.
 - Buy/get a memory stick that can be used to create the Ubuntu boot (requires ~3GB). Note: everything on the stick will be destroyed so ensure you don't have anything important on the USB stick before doing the next step.
 - Create bootable Ubuntu USB stick following [**this tutorial**](https://ubuntu.com/tutorials/tutorial-create-a-usb-stick-on-windows)
+- Install Ubuntu following [**this tutorial**](https://ubuntu.com/tutorials/tutorial-install-ubuntu-desktop)
