@@ -16,6 +16,8 @@ There are several tutorials giving useful information about making Ubuntu instal
 
 ## Steps
 
+### Prepare Windows for Ubuntu dual boot
+
 - Update Windows
    - First step when you get your new laptop is to install the necessary Windows and Dell updates. You can do this by going to Settings > Updates & Security > Check For Updates. 
    
@@ -24,3 +26,15 @@ There are several tutorials giving useful information about making Ubuntu instal
    - Right click on the largest partition and click “Shrink Volume”.
    - Choose the desired size for Ubuntu  (750 GB with 1TB disk size).
    - Now yous should have the newly created “Unallocated space” visible in the partition diagram.
+
+- Switch from RAID to AHCI Mode
+   - Type “cmd” into the Windows Search Bar, then click “Run as administrator”.
+   - Type the following command and press ENTER: `bcdedit /set {current} safeboot minimal`. It should say "operation completed successfully."
+   - Restart the computer and enter the BIOS Setup. For the Dell XPS 15 7590, this means **restarting the laptop and then repeatedly pressing F2 during the restart**. This has to be done early and often to work.
+   - Under System Configuation, change the SATA Operation mode from RAID to AHCI.
+   - Save changes and try to boot into Windows. It will automatically boot to Safe Mode.
+   - Type “cmd” into the Windows Search Bar, then click “Run as administrator”.
+   - Type this command and press ENTER: `bcdedit /deletevalue {current} safeboot` This next step makes your computer not boot into safeboot. 
+   - **Reboot** once more and Windows will automatically start with AHCI drivers enabled.
+      - If this worked, you should be able to search “Device Manager” in the Windows Search Bar, then see IDE ATA/ATAPI Controllers > Intel(R) 300 Series Chipset Family SATA AHCI Controller.
+
