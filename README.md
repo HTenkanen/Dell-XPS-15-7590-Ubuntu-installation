@@ -38,3 +38,8 @@ There are several tutorials giving useful information about making Ubuntu instal
    - **Reboot** once more and Windows will automatically start with AHCI drivers enabled.
       - If this worked, you should be able to search “Device Manager” in the Windows Search Bar, then see IDE ATA/ATAPI Controllers > Intel(R) 300 Series Chipset Family SATA AHCI Controller.
 
+### Install Ubuntu 19.10
+
+- Download [Ubuntu 19.10](https://ubuntu.com/download/desktop/thank-you/?version=19.10&architecture=amd64).
+- Download [Rufus](https://rufus.ie/) for making the bootable memory stick.
+- Buy/get a memory stick that can be used to create the Ubuntu boot (requires ~3GB)
